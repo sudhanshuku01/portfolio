@@ -1,0 +1,80 @@
+@import url(./Sections/Header.css);
+@import url(./Sections/Hero.css);
+@import url(./Sections/footer.css);
+
+/* font-family: 'Bonheur Royale', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Lilita One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Sofia Sans Condensed', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Lato&family=Lilita+One&family=Montserrat&family=Nunito&family=Open+Sans&family=PT+Serif&family=Playfair+Display&family=Plus+Jakarta+Sans&family=Poppins&family=Raleway&family=Sofia+Sans+Condensed&display=swap');
+
+
+:root{
+  --color-mint: hsl(164, 61%, 65%);
+    --color-mint-up: hsl(148, 35%, 74%);
+    --color-mint-down: hsl(163, 36%, 51%);
+    --color-lilac: hsl(264, 51%, 71%);
+    --color-sea: hsl(189, 58%, 65%);
+    --color-highlight: hsl(264, 51%, 71%);
+    --color-lilac-up: hsl(240, 33%, 77%);
+    --color-sherbet: hsl(55, 97%, 85%);
+    --color-sherbet-fade: hsl(55, 100%, 94%);
+    --color-rose: hsl(344, 56%, 69%);
+    --color-marshmellow: hsl(329, 44%, 71%);
+    --color-peach: hsl(4, 65%, 85%);
+    --color-biscuit: hsl(26, 18%, 61%);
+    --color-oat: hsl(17, 12%, 77%);
+    --color-light: hsl(0, 0%, 97%);
+    --color-light-fade: hsl(300, 11%, 96%);
+    --color-light-down: hsl(210, 4%, 98%);
+    --color-light-down-2: hsl(210, 4%, 96%);
+    --color-light-down-3: hsl(210, 4%, 93%);
+    --color-mid: hsl(0, 0%, 80%);
+    --color-dark: hsl(0, 0%, 25%);
+    --color-dark-opacity: hsla(0, 0%, 25%, 0.3);
+    --color-dark-down: hsl(237, 18%, 23%);
+    --color-mint-selection: rgba(111, 220, 191, 0.9);
+    --color-lilac-selection: rgba(173, 143, 219, 0.9);
+    --color-light-selection: rgba(247, 247, 247, 0.99);
+    --color-dark-selection: rgba(64, 64, 64, 0.99);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(100, 70, 70); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0d3ba7; 
+  }

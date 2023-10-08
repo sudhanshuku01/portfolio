@@ -1,0 +1,54 @@
+
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: center;
+}
+
+.footer-info>h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+.footer-info>p{
+    margin: 20px 0px;
+}
+.footer-info>p a{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.footer-info-socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-info-socials img{
+    width: 25px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.footer-info-socials img:hover{
+    scale: 1.1;
+}
+.footer-image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width:800px) {
+    
+      
+  }
+  @media only screen and (max-width:500px) {
+    .footer{
+        flex-direction: column;
+    }
+  }
+    
