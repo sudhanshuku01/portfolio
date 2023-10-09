@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useMode } from './Context/Mode'
+// import bookimg from '../images/book-stack.png'
+import pcimg from'../images/programming.png'
 
 const Hero = () => {
   const [lm,setLm]=useMode()
@@ -7,12 +9,13 @@ const Hero = () => {
   return (
     <div 
      className='hero'>
-      <div style={{backgroundColor:lm?"rgba(111, 220, 191, 0.9)":"hsl(237, 18%, 23%)"}}  
+      <div style={{backgroundColor:lm?"hsl(0, 0%, 97%)":"hsl(0, 0%, 25%)"}}
       className='hero-left'>
-        {/* <img src={wrkimg} alt="" /> */}
+        {/* <img src={bookimg} alt="" /> */}
+        <img src={pcimg} alt="" />
       </div>
       <div
-      style={{backgroundColor:lm?"hsl(0, 0%, 97%)":"hsl(0, 0%, 25%)",color:lm?"black":"white"}}
+      style={{backgroundColor:lm?"rgba(111, 220, 191, 0.9)":"hsl(257, 8%, 18%)",color:lm?"hsl(0, 0%, 25%)":"#fafafa"}}  
        className='hero-right'>
         <div className='hero-right-content'>
            <p>👋Hi,I'm sudhanshu</p>

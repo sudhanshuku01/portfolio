@@ -2,9 +2,16 @@
     display: grid;
     grid-template-columns: 6fr 10fr;
 }
-/* .hero-left{
-
-} */
+.hero-left{
+  position: relative;
+}
+.hero-left>img{
+  position: absolute;
+  width: 200px;
+  top: 150px;
+  right: -50px;
+  z-index: 11;
+}
 .hero-right{
     position: relative;
     padding: 80px;
@@ -31,7 +38,7 @@
 } */
 .hero-right p{   
     font-family: 'Bonheur Royale', cursive;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px;
     transform: rotate(-5deg);
@@ -39,11 +46,9 @@
 
 }
 .hero-right-content h1{
-    font-family: 'Lilita One', cursive;
-    font-size: 40px;
-    word-spacing: 10px;
-    letter-spacing: 2px;
-    line-height: 50px;
+    font-family:Mosk, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
 }
 @media only screen and (max-width:800px) {
     .hero{
@@ -54,7 +59,11 @@
   }   
 }
 @media only screen and (max-width:500px) {
+  .hero-right-content h1{
+    font-size: 30px;
+  }
   .hero-right{
     padding: 70px 20px;
+    padding-bottom: 20px;
   }
 }
