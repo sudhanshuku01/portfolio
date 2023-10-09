@@ -6,7 +6,7 @@ const Home = () => {
   const [lm,setLm]=useMode()
   
   return (
-    <Layout title="sudhanshu kushwaha ">
+    <Layout>
      <Hero />
     </Layout>
   )
