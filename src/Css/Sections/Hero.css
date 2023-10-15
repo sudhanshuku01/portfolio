@@ -13,8 +13,11 @@
   z-index: 11;
 }
 .hero-right{
+    display: flex;
+    align-items: center;
     position: relative;
     padding: 80px;
+    height: 100vh;
 
 }
 .hero-right-content button{
