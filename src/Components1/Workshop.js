@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import chatimg from "../images/speech-bubble.png";
 
 const Workspace = () => {
-  const [lm, setLm] = useMode();
+  const [lm] = useMode();
 
   return (
     <Layout title="ReactJs and NodeJs - sudhanshukushwaha.com" description="what is the use of reactjs and nodejs in web development" keywords="webdevelopment reactjs nodejs css html">

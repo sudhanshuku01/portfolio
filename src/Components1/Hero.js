@@ -4,7 +4,7 @@ import { useMode } from './Context/Mode'
 import pcimg from'../images/programming.png'
 
 const Hero = () => {
-  const [lm,setLm]=useMode()
+  const [lm]=useMode()
   
   return (
     <div 
