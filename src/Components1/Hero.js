@@ -1,7 +1,6 @@
 import React from 'react'
 import { useMode } from './Context/Mode'
-// import bookimg from '../images/book-stack.png'
-import pcimg from'../images/programming.png'
+import pcimg from '../images/programming.png'
 
 const Hero = () => {
   const [lm]=useMode()
@@ -11,7 +10,6 @@ const Hero = () => {
      className='hero'>
       <div style={{backgroundColor:lm?"hsl(0, 0%, 97%)":"hsl(0, 0%, 25%)"}}
       className='hero-left'>
-        {/* <img src={bookimg} alt="" /> */}
         <img src={pcimg} alt="" />
       </div>
       <div

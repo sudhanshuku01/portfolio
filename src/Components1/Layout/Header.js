@@ -21,10 +21,9 @@ const Header = () => {
           alt=""
         />
         <NavLink
-          style={{ color: lm ? "rgba(64, 64, 64, 0.99)" : "#3bcc82" }}
           to="/"
         >
-          <Typewriter text="Sudhanshu" delay="500" infinite={false} />
+        <Typewriter text="Sudhanshu" delay="500" infinite={false} />
         </NavLink>
       </div>
       <ul style={{ height: ulht }} className="header-ul">

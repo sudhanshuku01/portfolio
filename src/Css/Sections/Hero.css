@@ -1,3 +1,6 @@
+
+
+
 .hero{
     display: grid;
     grid-template-columns: 6fr 10fr;
@@ -11,6 +14,9 @@
   top: 150px;
   right: -50px;
   z-index: 11;
+}
+.hero-left video{
+  width: 300px
 }
 .hero-right{
     display: flex;
@@ -40,7 +46,7 @@
 
 } */
 .hero-right p{   
-    font-family: 'Bonheur Royale', cursive;
+    font-family: 'heartofever';
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -49,9 +55,12 @@
 
 }
 .hero-right-content h1{
-    font-family:Mosk, sans-serif;
-    font-weight: 900;
-    font-size: 35px;
+  font-family: 'Optien-font';
+  font-weight: 1000;
+  font-size: 35px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 45px;
 }
 @media only screen and (max-width:800px) {
     .hero{

@@ -1,0 +1,105 @@
+
+
+.about{
+ padding: 80px 20px;
+}
+.about-me{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.about-me-images img{
+    position: absolute;
+    width: 100px;
+}
+.about-me-images img:nth-child(1){
+   top: 20%;
+   left: 8%;
+}
+.about-me-images img:nth-child(2){
+    top: 80%;
+    left: 18%;
+}
+.about-me-images img:nth-child(3){
+    top: 25%;
+   left: 75%;
+}
+.about-me-images img:nth-child(4){
+    top: 75%;
+    left: 75%;
+}
+
+
+
+
+.about-me h1{
+    position: relative;
+    font-family: 'heartofever';
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+.about-me h1 img{
+    width: 60px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.about-me p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    width: 600px;
+    margin-top: 20px;
+}
+.about-me-ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 60px;
+    width: 500px;
+    justify-content: center;
+    gap: 8px;
+}
+.about-me-ul li{
+    padding: 8px 20px;
+    border-radius: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: var(--color-light-down);
+    color: var(--color-dark);
+    border: 2px solid var(--n-color-lilac);
+}
+
+@media only screen and (max-width:800px) {
+    .about-me p{
+        width: 80%;
+    }
+    .about-me ul{
+        width: 80%;
+    }
+    .about-me-images img:nth-child(1){
+        top: 13%;
+       left: 0%;
+     }
+     .about-me-images img:nth-child(2){
+        top: 96%;
+        left: 0;
+     }
+     .about-me-images img:nth-child(3){
+         top: 25%;
+        left: 75%;
+     }
+     .about-me-images img:nth-child(4){
+        top: 62%;
+        left: 75%;
+     }
+     .about-me-ul{
+        margin-top: 100px;
+     }
+     
+}
+@media only screen and (max-width:500px) {
+  
+}

@@ -14,12 +14,58 @@
     flex: 1;
 }
 .header-title a{
-  font-family: 'Cabin Sketch', cursive;
-  font-weight: 900;
-  font-size: 35px;
-  letter-spacing: -2px;
   text-decoration: none;
+  width: 150px;
+  text-align: center;
 }
+.header-title a span{
+  font-size: 32px;
+  font-weight: bold;
+
+  font-family: 'chocolatepudding';
+  color: transparent;
+}
+/* .header-title a span{
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header-title a span:nth-child(1){
+  color: transparent;
+  -webkit-text-stroke: 2px #000000;
+}
+.header-title a span:nth-child(2){
+  color: #ae8fdb;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0%{
+    clip-path: polygon(
+      100% 100%
+      100% 52%,
+      84% 59%,
+      70% 61%,
+      54% 60%,
+      33% 50%,
+      16% 44%,
+      0% 45%,
+    );
+  }
+  100%{
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%
+    );
+  }
+} */
+
 .header-ul{
     display: flex;
     align-items: center;

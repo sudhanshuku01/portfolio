@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-
+import { useMode } from './Context/Mode';
 const Typewriter = ({ text, delay, infinite }) => {
+  const [lm]=useMode()
   const [currentText, setCurrentText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,9 +22,11 @@ const Typewriter = ({ text, delay, infinite }) => {
     }
 
     return () => clearTimeout(timeout);
-  }, [currentIndex, delay, infinite, text]);
+  }, [currentIndex, delay, infinite, text,lm]);
 
-  return <span>{currentText}</span>;
+  return <span 
+  style={{ color: lm ? "rgba(64, 64, 64, 0.99)" : "#3bcc82" }}
+   >{currentText}</span>;
 };
 
 export default Typewriter;
