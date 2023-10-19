@@ -154,5 +154,7 @@
 }
 
 @media only screen and (max-width:500px) {
-  
+    .workshop-chatapp-image img{
+        width: 200px;
+    }
   }

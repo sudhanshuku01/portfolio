@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+import { HelmetProvider } from 'react-helmet-async';
 import './Css/Style.css'
 
 
@@ -13,7 +13,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <ModeProvider>
+    <HelmetProvider>
     <App />
+    </HelmetProvider>
     </ModeProvider>
     </BrowserRouter>
   </React.StrictMode>

@@ -8,7 +8,12 @@ const Workspace = () => {
   const [lm] = useMode();
 
   return (
-    <Layout title="ReactJs and NodeJs - sudhanshukushwaha.com" description="what is the use of reactjs and nodejs in web development" keywords="webdevelopment reactjs nodejs css html">
+    <Layout
+      title="Work - Sudhanshu Kushwaha"
+      description="coding workshop of sudhanshu" 
+      keywords="Data Structures, Algorithms, Python, Java, C, C++, JavaScript, Android Development, SQL, Data Science, Machine Learning, PHP, Web Development, System Design, Tutorial, Technical Blogs, Interview Experience, Interview Preparation, Programming, Competitive Programming, SDE Sheet, Job-a-thon, Coding Contests, GATE CSE, HTML, CSS, React, NodeJS, Placement, Aptitude, Quiz, Computer Science, Programming Examples, sudhanshukushwaha courses, Puzzles"
+      url="https://www.sudhanshukushwaha.com/workshop"
+     >
       <div style={{background:lm?'#fef8b4':'hsl(257, 8%, 18%)',color:lm?'#404040':'#f7f7f7'}} className="workshop">
         <div className="workshop-react">
           <h1>React Js</h1>
