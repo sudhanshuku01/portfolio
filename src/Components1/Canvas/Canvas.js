@@ -13,8 +13,8 @@ class Particle{
             this.x=mouse.x;
             this.y=mouse.y;
             this.size=Math.random()*10;
-            this.speedX=Math.random()*4-2;
-            this.speedY=Math.random()*4-2;
+            this.speedX=Math.random()*10-5;
+            this.speedY=Math.random()*10-5;
             this.color='hsl('+hue+',100%,50%)';
         }
         update(){
@@ -53,6 +53,13 @@ class Particle{
     canvas.width  = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
 
+    canvas.addEventListener('mousedown',function(event){
+        mouse.x=event.x;
+        mouse.y=event.y+window.scrollY;
+        for(let i=0;i<50;i++){
+              ParticleArray.push(new Particle(hue));
+          }
+      })
     canvas.addEventListener('mousemove',function(event){
         mouse.x=event.x;
         mouse.y=event.y+window.scrollY;
