@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 100;
     display: flex;
     width: 95%;
     align-items: center;
@@ -18,12 +18,16 @@
   width: 200px;
   text-align: center;
 }
+.header-title a span:hover{
+  text-shadow: 2px 3px red;
+}
 .header-title a span{
   font-size: 32px;
   font-weight: bold;
 
   font-family: 'chocolatepudding';
   color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 /* .header-title a span{
   position: absolute;

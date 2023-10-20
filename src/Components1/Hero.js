@@ -1,6 +1,7 @@
 import React from 'react'
 import { useMode } from './Context/Mode'
 import pcimg from '../images/programming.png'
+import Canvas from './Canvas/Canvas'
 
 const Hero = () => {
   const [lm]=useMode()
@@ -20,9 +21,12 @@ const Hero = () => {
            <h1>I like making <br />fun, <br />
              interactive things with code. I also talk & write about those things.
            </h1>
-           <button>Learn More</button>
+           <button
+           style={{boxShadow:lm?'3px 3px hsl(274, 4%, 18%)':'2px 2px #ff0000'}}
+           >Touch Screen For Magic 🪄</button>
        </div>
       </div>
+      <Canvas />
     </div>
   )
 }
