@@ -3,7 +3,7 @@ import Layout from './Layout/Layout'
 const Blog = () => {
   return (
     <Layout>
-      <div>
+      <div className='blog'>
         work in process..
       </div>
     </Layout>

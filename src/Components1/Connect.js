@@ -3,7 +3,7 @@ import Layout from './Layout/Layout'
 const Connect = () => {
   return (
     <Layout>
-      <div>
+      <div className='connect'>
         Work in process..
       </div>
     </Layout>

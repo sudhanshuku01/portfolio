@@ -6,6 +6,8 @@
 @import url(./Sections/tech.css);
 @import url(./Sections/workshop.css);
 @import url(./Sections/about.css);
+@import url(./Sections/connect.css);
+@import url(./Sections/blog.css);
 
 @font-face {
   font-family: 'Optien-font';
