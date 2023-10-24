@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Layout from './Layout/Layout'
 const Connect = () => {
   return (
-    <div>
-      connect .....
-    </div>
+    <Layout>
+      <div>
+        Work in process..
+      </div>
+    </Layout>
   )
 }
 
