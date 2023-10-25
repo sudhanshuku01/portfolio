@@ -80,7 +80,11 @@ const TicTacToe = () => {
   }, [gamestate, xturn, iswin, lm]);
 
   return (
-    <Layout>
+    <Layout
+    title="TicTacToe Game"
+    description="play tictactoe game online on the browser "
+    keywords="tictactoe game online"
+    >
       <div
         style={{
           background: lm ? "#fef8b4" : "hsl(257, 8%, 18%)",

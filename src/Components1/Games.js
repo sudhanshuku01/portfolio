@@ -14,7 +14,9 @@ const Games = () => {
   ]
 
   return (
-    <Layout>
+    <Layout
+    title="Online Games 🎮 | Play Now !"
+    >
        <div
         style={{background:lm?'#fef8b4':'hsl(257, 8%, 18%)',color:lm?'#404040':'#f7f7f7'}}
         className='game'>
