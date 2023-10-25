@@ -27,24 +27,24 @@ const Header = () => {
         </NavLink>
       </div>
       <ul style={{ height: ulht }} className="header-ul">
+      <li>
+          <NavLink style={{ color: lm ? "black" : "white" }} to="/about">
+            About
+          </NavLink>
+        </li>
         <li>
           <NavLink style={{ color: lm ? "black" : "white" }} to="/workshop">
-            workshop
+            Works
           </NavLink>
         </li>
         <li>
           <NavLink style={{ color: lm ? "black" : "white" }} to="/connect">
-            connect
+            Connect
           </NavLink>
         </li>
         <li>
-          <NavLink style={{ color: lm ? "black" : "white" }} to="/about">
-            about
-          </NavLink>
-        </li>
-        <li>
-          <NavLink style={{ color: lm ? "black" : "white" }} to="/blog">
-            blog
+          <NavLink style={{ color: lm ? "black" : "white" }} to="/game">
+            Games
           </NavLink>
         </li>
       </ul>

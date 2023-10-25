@@ -45,10 +45,13 @@
 }
 .about-me h1 img{
     width: 60px;
+    height: 60px;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    object-fit: cover;
+    object-position: 100% 64%;
 }
 .about-me p{
     font-family: 'Plus Jakarta Sans', sans-serif;

@@ -6,15 +6,15 @@ import Canvas from './Canvas/Canvas'
 const Hero = () => {
   const [lm]=useMode()
   
-  return (
+  return ( 
     <div 
      className='hero'>
-      <div style={{backgroundColor:lm?"hsl(0, 0%, 97%)":"hsl(0, 0%, 25%)"}}
+      <div style={{backgroundColor:lm?"rgba(111, 220, 191, 0.9)":"hsl(0, 0%, 25%)"}}
       className='hero-left'>
         <img src={pcimg} alt="" />
       </div>
       <div
-      style={{backgroundColor:lm?"rgba(111, 220, 191, 0.9)":"hsl(257, 8%, 18%)",color:lm?"hsl(0, 0%, 25%)":"#fafafa"}}  
+      style={{backgroundColor:lm?"#f7f7f7":"hsl(257, 8%, 18%)",color:lm?"hsl(0, 0%, 25%)":"#fafafa"}}  
        className='hero-right'>
         <div className='hero-right-content'>
            <p>👋Hi,I'm sudhanshu</p>

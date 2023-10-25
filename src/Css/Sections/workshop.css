@@ -4,44 +4,27 @@
     padding: 80px 60px;
 }
 
-.workshop-react h1{
-    font-family: Mosk,sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-}
-
-.workshop-react p{
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    width: 70%;
-    font-size: 19px;
-    word-spacing: 4px;
-    line-height: 34px;
-    margin-top: 20px;
-}
-
-.workshop-chatapp{
+.workshop-app{
   display: flex;
-  margin-top: 70px;
+  margin-top: 20px;
   flex-wrap: wrap;
 }
 
-.workshop-chatapp-content{
+.workshop-app-content{
     width: 60%;
     margin-right: 30px;
 }
 
-.workshop-chatapp-content h1{
+.workshop-app-content h1{
     font-weight: 600;
     font-family: 'Sofia Sans Condensed', sans-serif; 
     font-size: 36px;
 }
 
-/* .workshop-chatapp-image{
+/* .workshop-app-image{
    
 } */
-.workshop-chatapp-image img{
+.workshop-app-image img{
     border-radius: 10px;
     width: 240px;
     border: 2px solid #ae8fdb;
@@ -49,7 +32,7 @@
     box-shadow: 4px 4px forestgreen;
 }
 
-.workshop-chatapp-content ul li{
+.workshop-app-content ul li{
     font-family: 'Plus Jakarta Sans', sans-serif;
     list-style: none;
     position: relative;
@@ -59,7 +42,7 @@
     line-height: 25px;
 }
 
-.workshop-chatapp-content ul li::before{
+.workshop-app-content ul li::before{
     position: absolute;
     content: "";
     list-style: none;
@@ -70,11 +53,11 @@
     left: -14px;
     background-color: #ae8fdb;
 }
-.workshop-chatapp-content ul li a{
+.workshop-app-content ul li a{
     position: relative;
     text-decoration: none;
 }
-.workshop-chatapp-content ul li a::before{
+.workshop-app-content ul li a::before{
     position: absolute; 
     content: "";
     width: 100%;
@@ -84,7 +67,7 @@
     background-color: rgb(0, 60, 255);
 
 }
-.workshop-chatapp-content ul li a::after{
+.workshop-app-content ul li a::after{
     position: absolute;
     content: "";
     width: 20px;
@@ -95,7 +78,7 @@
     transform: translateX(-20px);
     transition: all 0.6s ease-in-out;
 }
-.workshop-chatapp-content ul li a:hover::after{
+.workshop-app-content ul li a:hover::after{
     
     transform: translateX(130px);
 
@@ -147,14 +130,14 @@
         width: 100%;
     }
 
-    .workshop-chatapp-content{
+    .workshop-app-content{
         width: 100%;
         margin-right: 30px;
     }
 }
 
 @media only screen and (max-width:500px) {
-    .workshop-chatapp-image img{
+    .workshop-app-image img{
         width: 200px;
     }
   }

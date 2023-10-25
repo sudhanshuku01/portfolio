@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from '../Components1/Layout/Layout'
-import coderimg from '../images/coderimg.png'
+import coderimg from '../images/sudhanshuimg2.jpg'
 import { useMode } from "./Context/Mode";
 import webdevimg from '../images/web-development.png'
 import appdevimg from '../images/development.png'

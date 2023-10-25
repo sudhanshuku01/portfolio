@@ -83,21 +83,21 @@
   font-size: 18px;
   letter-spacing: 0.5px;
   transition: all 0.3s ease-in-out; 
-
 }
-.header-ul li a:hover:after,.header-ul li a.active::after{
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    bottom: -4px;
-    left: 0;
-    content: " ";
-    background-image: url(../../images/pngegg.png);
-    background-repeat: no-repeat;
-    filter: invert(1);
-    background-size: cover;
-    background-position: bottom;
-    transition: all 0.3s ease-in-out;
+
+.header-ul li a:hover::after,.header-ul li a.active::after{
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  bottom: -4px;
+  left: 50%;
+  content: " ";
+  background-image: url(../../images/waveline.png); 
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  transform: translate(-50%);
+  transition: all 0.3s ease-in-out;
 }
 
 .header-ul li a:hover{
