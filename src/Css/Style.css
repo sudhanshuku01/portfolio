@@ -9,6 +9,9 @@
 @import url(./Sections/connect.css);
 @import url(./Sections/blog.css);
 @import url(./Sections/Games.css);
+@import url(./Sections/tictactoe.css);
+@import url(./Sections/chess.css);
+@import url(./Sections/flappy.css);
 
 @font-face {
   font-family: 'Optien-font';

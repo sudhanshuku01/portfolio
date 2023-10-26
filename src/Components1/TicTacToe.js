@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Layout from "./Layout/Layout";
 import reloadimg from "../images/reload.png";
 import { useMode } from "./Context/Mode";
-import useSound from "use-sound";
 import gameoversound from "../images/gameover.wav";
 import clicksound from "../images/click.wav";
 import { rot_Arr } from "./utils/Rotation";
@@ -28,8 +27,8 @@ const checkWin = (board) => {
 };
 
 const TicTacToe = () => {
-  const [play1] = useSound(clicksound);
-  const [play2] = useSound(gameoversound);
+  const clickmusic=new Audio(clicksound)
+  const gomusic=new Audio(gameoversound);
   const [style,setStyle]=useState({
     width:'0px',
     left:'0px',
@@ -47,12 +46,12 @@ const TicTacToe = () => {
     if (iswin || nextList[index] !== "") {
       return;
     }
-    play1();
+    clickmusic.play()
     nextList[index] = xturn ? "X" : "O";
     setGamestate(nextList);
     const winindx=checkWin(nextList);
     if (winindx!==-1) {
-      play2()
+      gomusic.play()
       setIswin(true);
       setStyle(rot_Arr[winindx])
     } else {
