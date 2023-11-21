@@ -15,7 +15,7 @@ const Games = () => {
     [snakeimg,"Snake",'snake'],
     [chessimg,"Chess",'chess'],
     [flappybirdimg,"FlappyBird",'flappy-bird'],
-  ]
+  ]   
 
   return (
     <Layout

@@ -2,7 +2,7 @@ import { useState, useContext, createContext } from "react";
 
 const ModeContext = createContext();
 const ModeProvider = ({ children }) => {
-  const [lm, setLm] = useState(true);
+  const [lm, setLm] = useState(false);
 
   return (
     <ModeContext.Provider value={[lm, setLm]}>

@@ -1,4 +1,15 @@
-
-.flappybird{
+.flappy{
     padding: 80px 20px;
+}
+.flappy-container{
+    position: relative;
+    width: 500px;
+    height: 400px;
+   background-color: var(--color-light-down-3);
+}
+.flappy-character{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
