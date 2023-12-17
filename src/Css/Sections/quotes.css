@@ -1,0 +1,37 @@
+.quotes{
+    padding: 100px 20px;
+    position: relative;
+}
+
+.quotes img{
+    position: absolute;
+    right: 10%;
+    width: 120px;
+    top: 40px;
+    opacity: 0.5;
+}
+.quotes h1{
+    font-family: 'Optien-font';
+    font-size: 30px;
+    font-weight: 900;
+    width: 62%;
+    margin:20px auto;
+}
+.quotes p{
+    height: 3px;
+    width: 50%;
+}
+@media only screen and (max-width:800px) {
+    .quotes h1{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:500px) {
+  .quotes h1{
+    width: 90%;
+  }
+  .quotes p{
+    width: 70%;
+  }
+}
+  

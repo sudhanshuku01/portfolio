@@ -1,34 +1,66 @@
 
-
-.technology-images{
-    display: flex;
-    gap: 40px;
-    background: wheat;
-    width: 500px;
-    overflow: hidden;
-    /* animation: scroll 100s linear infinite ; */
-}
-.technology-images:hover{
-    animation-play-state: paused;
-}
-
-.technology-images img{
-    perspective: 10px;
-    width: 90px;
-    border-radius: 10px;
+.technology{
     padding: 20px;
-    cursor: pointer;
-    background: var(--color-light-fade);
 }
-.technology-images img:hover{
-    transform: translateZ(20px);
+.technology > h1{
+    font-size: 40px;
+    margin: 20px 0px;
+    font-family: 'Optien-font';
+}
+.technology >p{
+    font-family: 'Raleway';
+    font-size: 20px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 6px 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.technology >p:hover{
+    
 }
 
-@keyframes scroll{
-    0%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(-500px);
-    }
+.technology-container{
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+.draggablecard{
+    padding: 20px 0px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.draggablecard >p{
+    height: 2px;
+    background: black;
+}
+.draggablecard-content{
+  padding: 10px;  
+}
+.draggablecard-content p{
+    font-size: 15px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.draggablecard-content h1{
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px 0px;
+
+}
+.draggablecard a{
+    text-decoration: none;
+    font-family: cursive;
+    margin-left: 10px;
+}
+.draggablecard-dragdiv{
+    position: relative;
+    padding: 5px 10px;
+}
+.draggablecard-dragdiv img{
+    position: absolute;
+    width: 40px;
+    object-fit: cover;
+    top: -24px;
+    left: 18px;
 }

@@ -13,3 +13,13 @@
     height: 60px;
     object-fit: contain;
 }
+.obstacle{
+    position: absolute;
+    background: red;
+    width: 10px;
+}
+.topObstacle{
+    position: absolute;
+    background: red;
+    width: 10px;
+}

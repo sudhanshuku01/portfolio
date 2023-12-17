@@ -14,7 +14,7 @@ const Flappybird = () => {
   //   let isGameOver = false;
   //   let gap = 430;
 
-  //   function startGame() {
+  //   function startGame() { 
   //     birdBottom -= gravity;
       
   //     bird.current.style.bottom = birdBottom + "px";
