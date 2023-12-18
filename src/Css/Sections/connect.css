@@ -1,3 +1,53 @@
 .connect{
     padding: 80px 60px;
-}
+} 
+
+/* ConnectPage.css */
+.connect-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .connect-page > h2 {
+      font-family: "Poppins", sans-serif;
+  }
+  .connect-page >p{
+    font-family: "Montserrat", sans-serif;
+  }
+  .connect-page form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .connect-page form  label {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 8px;
+  }
+  
+ .connect-page form input,
+ .connect-page form textarea {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .connect-page form button {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .connect-page form button:hover {
+    background-color: #0056b3;
+  }
+  

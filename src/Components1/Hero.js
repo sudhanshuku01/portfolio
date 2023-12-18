@@ -1,6 +1,5 @@
 import React from "react";
 import { useMode } from "./Context/Mode";
-import pcimg from "../images/programming.png";
 import Canvas from "./Canvas/Canvas";
 
 const Hero = () => {
@@ -14,7 +13,6 @@ const Hero = () => {
         }}
         className="hero-left"
       >
-        <img src={pcimg} alt="" />
       </div>
       <div
         style={{

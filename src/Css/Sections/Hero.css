@@ -9,13 +9,7 @@
 .hero-left{
   position: relative;
 }
-.hero-left>img{
-  position: absolute;
-  width: 200px;
-  top: 150px;
-  right: -50px;
-  z-index: 4;
-}
+
 .hero-left video{
   width: 300px
 }

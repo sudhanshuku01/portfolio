@@ -73,7 +73,7 @@ const Technology = () => {
           }
         }}
       >
-        {cardno === 4 ? "Show More" : "Show Less"}
+        {cardno === 4 ? "Show More.." : "Show Less.."}
       </p>
     </section>
   );

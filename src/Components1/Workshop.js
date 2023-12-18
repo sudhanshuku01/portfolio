@@ -2,7 +2,8 @@ import React from "react";
 import Layout from "./Layout/Layout";
 import { useMode } from "./Context/Mode";
 import { NavLink } from "react-router-dom";
-import chatimg from "../images/speech-bubble.png";
+import meetmeimg from '../images/meetme.png'
+import ecommimg from '../images/ecommerce.png'
 
 const Workspace = () => {
   const [lm] = useMode();
@@ -15,100 +16,37 @@ const Workspace = () => {
       url="https://www.sudhanshukushwaha.com/workshop"
      >
       <div style={{background:lm?'#fef8b4':'hsl(257, 8%, 18%)',color:lm?'#404040':'#f7f7f7'}} className="workshop">
+        <div className="workshop-container">
+        <div style={{background:lm?'#ffffff':'#404040'}} className="workshop-card">
+             <div>
+                <h1>Chat App</h1>
+                <p>real-time communication globally</p>
+             </div>
+             <div style={{background:lm?'#ad998a':'hsl(260, 24%, 18%)'}} >
+                <img src={meetmeimg} alt="chat app icon" />
+                <h1>Technology Used</h1>
+                <p>Javascript | ReactJs</p>
+                <p>NodeJs | MongoDb</p>
+                <button onClick={()=>window.open('https://www.google.com', '_blank')}>code</button>
+             </div>
+          </div>
+          
+        <div style={{background:lm?'#ffffff':'#404040'}} className="workshop-card">
+             <div>
+                <h1>Ecommerce App</h1>
+                <p>simplify online shopping</p>
+             </div>
+             <div  style={{background:lm?'#ad998a':'hsl(260, 24%, 18%)'}}>  
+                <img src={ecommimg} alt="chat app icon" />
+                <h1>Technology Used</h1>
+                <p>Javascript | ReactJs</p>
+                <p>NodeJs | MongoDb</p>
+                <button onClick={()=>window.open('https://www.google.com', '_blank')}>code</button>
+             </div>
+          </div>
 
-        <div className="workshop-app">
-          <div className="workshop-app-content">
-            <h1>Chat Application</h1>
-            <ul>
-              <li>Node.js is used to create the server-side logic for the chat
-              application.</li>
-              <li>
-                It handles real-time <strong>communication</strong>, <strong>user authentication</strong>, and 
-                 <strong> message storage</strong>.
-              </li>
-              <li>
-                <strong>WebSocket</strong> or a similar technology is often used to enable
-                real-time, <strong>bidirectional communication</strong> between the server and
-                clients.
-              </li>
-              <li>
-                Popular libraries like <strong>Socket.io</strong> can simplify WebSocket
-                implementation.
-              </li>
-              <li>
-                React is used to build the user interface of the chat
-                application.
-              </li>
-              <li>
-                Users can view and send messages through the React-based
-                interface.
-              </li>
-              <li>
-                The React app connects to the Node.js backend using WebSocket or
-                other <strong>protocols</strong> to ensure real-time updates.
-              </li>
-              <li>
-                Components are used to structure the user interface, and state
-                management libraries like <strong>Redux</strong> or <strong>React Context</strong> can be used to
-                manage application data.
-              </li>
-              <li>
-                <NavLink style={{color:lm?'#404040':'#f7f7f7'}} href="/"><strong>SOURCE CODE</strong></NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className="workshop-app-image">
-            <img src={chatimg} alt="chatapp logo" />
-          </div>
+
         </div>
-
-        {/* <div className="workshop-app">
-          <div className="workshop-app-content">
-            <h1>Chat Application</h1>
-            <ul>
-              <li>Node.js is used to create the server-side logic for the chat
-              application.</li>
-              <li>
-                It handles real-time <strong>communication</strong>, <strong>user authentication</strong>, and 
-                 <strong> message storage</strong>.
-              </li>
-              <li>
-                <strong>WebSocket</strong> or a similar technology is often used to enable
-                real-time, <strong>bidirectional communication</strong> between the server and
-                clients.
-              </li>
-              <li>
-                Popular libraries like <strong>Socket.io</strong> can simplify WebSocket
-                implementation.
-              </li>
-              <li>
-                React is used to build the user interface of the chat
-                application.
-              </li>
-              <li>
-                Users can view and send messages through the React-based
-                interface.
-              </li>
-              <li>
-                The React app connects to the Node.js backend using WebSocket or
-                other <strong>protocols</strong> to ensure real-time updates.
-              </li>
-              <li>
-                Components are used to structure the user interface, and state
-                management libraries like <strong>Redux</strong> or <strong>React Context</strong> can be used to
-                manage application data.
-              </li>
-              <li>
-                <NavLink style={{color:lm?'#404040':'#f7f7f7'}} href="/"><strong>SOURCE CODE</strong></NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className="workshop-app-image">
-            <img src={chatimg} alt="ecommerce app logo" />
-          </div>
-        </div> */}
-
-
         <div className="workshop-repolink">
           <NavLink
           style={{background:lm?'hsl(257, 8%, 18%)':'#fef8b4'}}
