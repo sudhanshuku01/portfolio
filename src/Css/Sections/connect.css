@@ -46,6 +46,9 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  .connect-page form button:hover{
+    filter: brightness(0.8);
+  }
   
   .connect-page form button:hover {
     background-color: #0056b3;

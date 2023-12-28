@@ -16,9 +16,9 @@
     margin: 20px auto;
     border-radius: 10px;
 }
-/* .technology >p:hover{
-    
-} */
+.technology >p:hover{
+    filter: brightness(0.9);
+}
 
 .technology-container{
  display: flex;
@@ -52,6 +52,9 @@
     text-decoration: none;
     font-family: cursive;
     margin-left: 10px;
+}
+.draggablecard a:hover{
+    filter: invert(1);
 }
 .draggablecard-dragdiv{
     position: relative;

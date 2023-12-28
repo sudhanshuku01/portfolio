@@ -4,6 +4,8 @@ import { useMode } from "./Context/Mode";
 import { NavLink } from "react-router-dom";
 import meetmeimg from "../images/meetme.png";
 import ecommimg from "../images/ecommerce.png";
+import pasimg from '../images/point and shoot game.png'
+import googledocsimg from '../images/google-docs.png'
 
 const Workspace = () => {
   const [lm] = useMode();
@@ -64,6 +66,49 @@ const Workspace = () => {
               </button>
             </div>
           </div>
+          <div
+            style={{ background: lm ? "#ffffff" : "#404040" }}
+            className="workshop-card"
+          >
+            <div>
+              <h1>Point and Shoot</h1>
+              <p>a web browser game</p>
+            </div>
+            <div style={{ background: lm ? "#ad998a" : "hsl(260, 24%, 18%)" }}>
+              <img src={pasimg} alt="game icon" />
+              <h1>Technology Used</h1>
+              <p>Html | Css</p>
+              <p>Vallina Javascript</p>
+              <button
+                onClick={() => window.open("https://www.google.com", "_blank")}
+              >
+                code
+              </button>
+            </div>
+          </div>
+          <div
+            style={{ background: lm ? "#ffffff" : "#404040" }}
+            className="workshop-card"
+          >
+            <div>
+              <h1>Google Docs Clone</h1>
+              <p>document managemet application</p>
+            </div>
+            <div style={{ background: lm ? "#ad998a" : "hsl(260, 24%, 18%)" }}>
+              <img src={googledocsimg} alt="chat app icon" />
+              <h1>Technology Used</h1>
+              <p>Mysql | ReactJs</p>
+              <p>NodeJs | Javascript</p>
+              <button
+                onClick={() => window.open("https://www.google.com", "_blank")}
+              >
+                code
+              </button>
+            </div>
+          </div>
+
+
+
         </div>
         <div className="workshop-repolink">
           <NavLink

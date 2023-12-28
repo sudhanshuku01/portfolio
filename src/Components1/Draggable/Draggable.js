@@ -1,7 +1,7 @@
 import React from "react";
 import ellipsiseimg from '../../images/ellipsis.png'
 import { useMode } from "../Context/Mode";
-const DraggableCard = ({ head, desc, img}) => {
+const DraggableCard = ({ head, desc}) => {
   const [lm]=useMode();
   // const [isDragging, setIsdragging] = useState(false);
   return (
