@@ -26,7 +26,7 @@ const Header = () => {
         <Typewriter text="Sudhanshu" delay="500" infinite={false} />
         </NavLink>
       </div>
-      <ul style={{ height: ulht }} className="header-ul">
+      <ul style={{ height: ulht}} className="header-ul">
       <li>
           <NavLink style={{ color: lm ? "black" : "white" }} to="/about">
             About

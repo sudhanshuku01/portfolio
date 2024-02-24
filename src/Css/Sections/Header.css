@@ -29,46 +29,6 @@
   color: transparent;
   transition: all 0.3s ease-in-out;
 }
-/* .header-title a span{
-  position: absolute;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.header-title a span:nth-child(1){
-  color: transparent;
-  -webkit-text-stroke: 2px #000000;
-}
-.header-title a span:nth-child(2){
-  color: #ae8fdb;
-  animation: animate 4s ease-in-out infinite;
-}
-@keyframes animate {
-  0%{
-    clip-path: polygon(
-      100% 100%
-      100% 52%,
-      84% 59%,
-      70% 61%,
-      54% 60%,
-      33% 50%,
-      16% 44%,
-      0% 45%,
-    );
-  }
-  100%{
-    clip-path: polygon(
-      0% 45%,
-      16% 44%,
-      33% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%
-    );
-  }
-} */
 
 .header-ul{
     display: flex;
@@ -85,26 +45,13 @@
   font-weight: 200;
   transition: all 0.3s ease-in-out;
 }
-
-.header-ul li a:hover::after,.header-ul li a.active::after{
-  position: absolute;
-  width: 60px;
-  height: 10px;
-  bottom: -4px;
-  left: 50%;
-  content: " ";
-  background-image: url(../../images/waveline.png); 
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center;
-  transform: translate(-50%);
+.header-ul li a:hover{
+  text-decoration: underline wavy rgb(114, 202, 218);
   transition: all 0.3s ease-in-out;
 }
-
-.header-ul li a:hover{
-  animation: ani1 0.4s linear;
+.header-ul li a.active{
+  text-decoration: underline wavy rgb(114, 202, 218);
 }
-
 .header-ul li{
   position: relative;
     list-style: none;
@@ -178,10 +125,8 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  .header-ul li a:hover:after{
-    display: none;
-  }
   .header-ul{
+    position: absolute;
     position: absolute;
     flex-direction: column;
     justify-content: space-evenly;
