@@ -1,20 +1,33 @@
-import React from 'react'
 
-const Certification = () => {
+
+import React, { useState } from 'react';
+import { Document, Page } from 'react-pdf';
+
+import javascriptPDF from '../CertificatesPdf/frontend.pdf';
+
+const Certification =() =>{
+  
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+    setPageNumber(1);
+  };
 
   return (
     <div>
-         <iframe
-        src='https://www.hackerrank.com/certificates/iframe/323477ad56ff'
-        title='HackerRank Certificate'
-        style={{ width: '100%', height: '800px', border: 'none' }}
-        allowFullScreen
-      ></iframe>
-       <div>
-       
-       </div>
+      <Document
+        file={javascriptPDF}
+        onLoadSuccess={onDocumentLoadSuccess}
+      >
+        <Page pageNumber={pageNumber} />
+      </Document> 
+      <p>
+        Page {pageNumber} of {numPages}
+      </p>
     </div>
-  )
+  );
 }
 
 export default Certification
